@@ -1,0 +1,201 @@
+/* Grundlæggende styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F3;
+    overflow-x: hidden;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  p {
+    font-family: "montserrat", sans-serif;
+    font-size: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 110px;
+    padding-bottom: 50px;
+    color: #4C413B;
+    font-family: "the seasons", serif;
+    font-size: 48px;
+    font-weight: 100;
+  }
+  
+  h2 {
+    font-family: "the seasons", serif;
+    font-size: 30px;
+    color: #486284;
+    font-weight: 100;
+    
+  }
+  
+  /* navigation styling */
+  
+  header nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color:#FAF8F3;
+  }
+  
+  .wrapper {
+    position: relative;
+    padding: 0 30px;
+    height: 70px;
+    margin: auto;
+    display: flex; /* Aktivere flexbox, for at få elementerne vandret / ved siden af hinanden */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper .logo a {
+    color: #4C413B;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "playfair-display";
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    font-family: "montserrat", sans-serif;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+  text-decoration: underline;
+  }
+  
+  /* Mega dropdown-menu styling */
+  .mega-box {
+    display: none; /* Skjuler dropdown-menuen som standard */
+    position: absolute; /* Placerer dropdown-menuen i forhold til navigationen, hvor vi har sat position: relative* - Hvis denne blev fjernet vil dropwdown ikke længere opføre sig som vi ønsker, men blot som et almindeligt blokelement */
+    left: 0; /* Placerer dropdown-menuen til venstre for navigationen */
+    width: 100%;
+    padding-top: 20px;
+    top: 50px; /* Placerer dropdown-menuen 50 pixels ned i forhold til toppen af nærmeste potionerede forældre */
+    z-index: 1000;
+  }
+  
+  .nav-links li:hover .mega-box {
+    display: block; /* Viser dropdown-menuen ved hover */
+  }
+  
+  .mega-box .content {
+    background-color: #FAF8F3;
+    border: 10px;
+    padding: 25px 40px;
+    width: 100%; /* Giver dropdown-menuen en bredde på 100% af dens forælder */
+    display: flex;
+  }
+  
+  .main {
+    width: 20%;
+    line-height: 30px;
+  }
+  
+  .main p {
+    color:  #4C413B;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .mega-links li {
+    margin-left: -40px;
+  }
+  
+  .mega-links li {
+    list-style: none; /* Fjerner punkttegn fra listen */
+  }
+  
+  .mega-links li a {
+    text-decoration: none; /*fjerner understregning fra links */
+    color:  #4C413B;
+    font-size: 14px;
+    padding: 5px 0;
+    display: inline-block; /* Kan stå på linje som andre elementer, og samtidig opføre sig som et block-element, hvor man kan give det bredde, højde, padding m.m. */
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  /* Burger-menu styling */
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem; /* Svarende til 32px - 2 x 16px som er standard fontstørrelsen */
+    cursor: pointer;
+    color: #4C413B;
+  }
+  
+  .menu-checkbox {
+    display: none; /* Skjuler checkboxen */
+  }
+  
+  
+  /* Responsiv styling */
+  
+  @media (max-width: 768px) {
+    /* Viser burger-menu-ikonet på mindre skærme */
+    .menu-icon {
+      display: block;
+    }
+  /* Navigation-links: skjules som standard på mobil og vises som en dropdown-menu */
+    .nav-links {
+      display: none; /* Skjuler navigationen */
+      flex-direction: column; /* Gør navigationen lodret */
+      background-color: #FAF8F3; /* Baggrundsfarve til navigationen */
+      position: absolute; /* Placerer navigationen som en overlay */
+      top: 50px; /* Placerer navigationen lige under headeren */
+      right: 0; /* Justerer navigationen til højre */
+      width: 100%; /* Navigationen fylder hele bredden */
+      z-index: 1000; /* Sørger for, at navigationen vises øverst */
+      padding: 10px; /* Tilføjer indvendig afstand */
+    }
+  /* Når checkboxen er markeret, vises navigationen */
+    .menu-checkbox:checked + .menu-icon + .logo + .nav-links {
+      display: flex; /* Viser navigationen */
+    }
+  /* Navigationselementer: hver liste fylder hele bredden */
+    .nav-links li {
+      width: 100%;/* Gør hvert element 100% bredt */
+    }
+  /* Links i navigationen: styling til mobil */
+    .nav-links li a {
+      display: block; /* Gør links til blokkelementer */
+      padding: 15px; /* Tilføjer indvendig afstand */
+      font-size: 18px; /* Øger tekststørrelsen for bedre læsbarhed */
+      color: #000000; /* Sort tekstfarve */
+    }
+  /* Dropdown-menu: vises, når brugeren holder musen over */
+    .nav-links li:hover .mega-box {
+      display: block; /* Viser dropdown-menuen */
+    }
+  /* Dropdown-menuens indhold: styling til mobil */
+    .mega-box .content {
+      flex-direction: column; /* Gør dropdown-menuens indhold lodret */
+      background-color: #FAF8F3;/* Baggrundsfarve */
+    }
+  
+    /* Dropdown-menuens sektioner: fylder hele bredden */
+    .main {
+      width: 100%; /* Gør hver sektion 100% bred */
+    }
+  /* Skjuler dropdown-menuen som standard */
+    .mega-box {
+      display: none !important; /* Skjuler dropdown-menuen */
+    }
+  }

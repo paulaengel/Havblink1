@@ -266,23 +266,12 @@ body {
   font-size: 30px;
 }
 
-.vinsmag-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.vinsmagning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.vinsmag-card {
-  max-width: 300px;
-}
-
-.vinsmag-card img {
-  width: 100%;
-  height: auto;
-}
 
 .vinsmag-card h2 {
   font-size: 30px; 
@@ -658,10 +647,6 @@ body {
     cursor: pointer;
   }
 
-  .regler p {
-    font-size: 14px;
-    padding: 10px;
-  }
 }
 
 @media (max-width: 768px) {

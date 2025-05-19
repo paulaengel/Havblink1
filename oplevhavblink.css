@@ -212,7 +212,7 @@ body {
   .hero-section {
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
+    background-color: white;
   }
   
   .image-container {
@@ -247,7 +247,7 @@ body {
     font-size: 48px;
     font-weight: normal;
     color: white;
-    margin-top: -100px;
+    margin-top: -120px;
   }
   
   .hero-content {
@@ -282,55 +282,118 @@ body {
 /* Besøg vingården */
 
 .besøg {
-    background-color: #fdfaf6; /* lys beige baggrund */
     text-align: center;
-    padding: 4rem 2rem;
   }
   
-  .text-content h2 {
+  .besøg-content h2 {
     font-size: 2.5rem;
     color: #2d4059;
     margin-bottom: 1rem;
   }
   
-  .text-content p {
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    font-size: 1.1rem;
-    color: #333;
-    line-height: 1.6;
+  .besøg-content p {
+   padding-left: 200px;
+   padding-right: 200px;
   }
+
+    .besøg-content {
+    padding-bottom: 30px;
+    }
   
   .knap {
-    background-color: #1a2a40;
+background-color: #1a2a40;
   color: white;
   text-decoration: none;
   padding: 12px 24px;
-  font-size: 1em;
   }
   
   .button:hover {
     background-color: #152c42;
   }
   
-  .image-grid {
+  .besøgbilleder-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 3rem;
   }
   
-  .image-grid img {
+  .besøgbilleder-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+/* vinsmagning */
+
+  .vinsmagning {
+    background-color: white;
+  }
+  
+  .vinsmagning-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "img1 text"
+      "img2 img2";
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 0;
+  }
+  
+  .image-1 {
+    grid-area: img1;
+  }
+  
+  .image-2 {
+    grid-area: img2;
+  }
+  
+  .vinsmagning-content {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vinsmagning-content h2 {
+    font-size: 48px;
+    text-align: right;
+  }
+  
+  .vinsmagning h3 {
+    font-family: "the seasons", serif;
+    font-size: 48px;
+    color: #163E61;
+    font-weight: bold
+  }
+
+  .vinsmagning-content h3 {
+    font-size: 30px;
+    text-align: right;
+  }
+  
+  .vinsmagning-content p {
+    font-size: 18px;
+    color:  #4C413B;
+    text-align: right;
+    margin-bottom: 24px;
+    padding-left: 100px;
+  }
+  
+  .vinsmagning-grid img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
-    border-radius: 8px;
   }
 
-
-
-
+  .knap3 a {
+    background-color: #1a2a40;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+  .knap3 {
+    text-align: right;
+  }
+  
   /* footer */
 
 .footer {

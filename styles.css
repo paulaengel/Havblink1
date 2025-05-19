@@ -13,6 +13,7 @@ body {
   p {
     font-family: "montserrat", sans-serif;
     font-weight: 100;
+    line-height: 1.5;
     font-size: 18px;
     color: #4C413B;
   }
@@ -31,9 +32,9 @@ body {
   
   h2 {
     font-family: "the seasons", serif;
-    font-size: 30px;
+    font-size: 48px;
     color: #163E61;
-    font-weight: 100;
+    font-weight: bold
     
   }
   
@@ -75,7 +76,7 @@ body {
   .nav-links li a {
     color: #4C413B;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
     padding: 9px 30px;
     border-radius: 5px;
@@ -106,13 +107,13 @@ body {
   .mega-box .content {
     background-color: #FAF8F3;
     border: 10px;
-    padding: 25px 40px;
+    padding: 10px 40px; 
     width: 100%; /* Giver dropdown-menuen en bredde på 100% af dens forælder */
-    display: flex;
+   
+    flex-direction: row;
   }
   
   .main {
-    width: 20%;
     line-height: 30px;
   }
   
@@ -133,7 +134,7 @@ body {
   .mega-links li a {
     text-decoration: none; /*fjerner understregning fra links */
     color:  #4C413B;
-    font-size: 14px;
+    font-size: 16px;
     padding: 5px 0;
     display: inline-block; /* Kan stå på linje som andre elementer, og samtidig opføre sig som et block-element, hvor man kan give det bredde, højde, padding m.m. */
     font-family: 'Work Sans', sans-serif;
@@ -261,6 +262,9 @@ body {
   color: #163E61;
   
 }
+.section h2 {
+  font-size: 30px;
+}
 
 .vinsmag-grid {
   display: flex;
@@ -319,7 +323,6 @@ body {
 .hvemervisection.reverse {
   grid-template-columns: 1fr 1fr;
   background-color: white;
-
 }
 
 .hvemervisection img {
@@ -339,7 +342,6 @@ body {
 
 .text-content h2 {
   font-size: 48px;
-  margin-bottom: 16px;
   text-align: right;
 }
 
@@ -384,3 +386,255 @@ body {
   font-size: 1em;
 }
 
+/* Fra druen til glasset sektion */
+
+.overlay-image2 {
+  position: absolute;
+  top: 0;
+  color: white;
+  padding: 40px;
+}
+
+.overlay-image2 h2 {
+  font-size: 48px;
+  font-family: "the seasons", serif;
+  text-align: center;
+}
+.overlay-image2 p {
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.druebillede img {
+  width: 100%;
+}
+.druebillede {
+  position: relative;
+}
+
+.druebillede2 img {
+  width: 100%;
+}
+.druebillede2 {
+  position: relative;
+}
+
+/* Udforsk mere - karussel */
+
+.udforsk-karussel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 50px;
+  margin-bottom: 70px;
+  padding-left: 80px;
+}
+
+.produkt-kort {
+  flex-shrink: 0;
+  width: 380px;
+  scroll-snap-align: center;
+}
+
+.produkt-kort img {
+  width: 100%;
+  display: block;
+}
+
+.produkt-info {
+  display: flex;
+  justify-content: space-between;
+  color: #4C413B;
+}
+
+.karussel h2 {
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.karussel h3 {
+  font-family: "the seasons", serif;
+  font-size: 30px;
+  color: #4C413B;
+  font-weight: 100;
+}
+
+/* Anmeldelser */
+
+.anmeldelser {
+  padding-top: 20px;
+  background-color: white;
+  text-align: center;
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+
+.anmeldelser h2 {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.anmeldelse-grid {
+  display: flex;
+  justify-content: left;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.anmeldelse {
+  max-width: 350px;
+  text-align: left;
+}
+
+.anmeldelse img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 16px;
+}
+.anmeldelser p {
+  font-size: 18px;
+  color: #4C413B;
+  margin-top: 8px;
+}
+
+/* Tilmed nyhedsbrev */
+
+.nyhedsbrev {
+  text-align: center;
+  padding: 60px;
+  color: white;
+  background-color: #D6CABB;
+}
+
+.nyhedsbrev h2 {
+  font-size: 48px;  
+}
+
+.nyhedsbrev p {
+  font-size: 18px;
+  display: flex;
+  color: #4C413B;
+  margin-bottom: 30px;
+  font-family: "montserrat", sans-serif;
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+.nyhedsbrev-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nyhedsbrev-form input[type="email"] {
+  padding: 15px 20px;
+  width: 450px;
+  font-size: 16px;
+  font-family: "montserrat", sans-serif;  
+  font-weight: 100;
+  border: none;
+}
+
+.nyhedsbrev-form button {
+  background-color: #5E534D;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "montserrat", sans-serif;  
+  font-weight: 100;
+  border: none;
+}
+
+/* footer */
+
+.footer {
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  margin-top: 50px;
+}
+
+.footer-logo h2 {
+  font-family: serif;
+  font-size: 40px;
+  display: flex;
+}
+
+.footer-kolonner {
+  display: flex;
+  gap: 170px;
+  justify-content: center;
+}
+
+.footer-kolonne h3 {
+  font-weight: bold;
+  font-family: "montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+.footer-kolonne ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-kolonne li {
+  margin-bottom: 2px;
+}
+
+.footer-kolonne a {
+  text-decoration: none;
+  color: #4C413B;
+  font-size: 18px;
+}
+
+.social-icons img {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  width: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Footer - Responsive*/
+
+@media (max-width: 768px) {
+  .footer-kolonner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-kolonne {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #c6ae70;
+    cursor: pointer;
+  }
+
+  .regler p {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

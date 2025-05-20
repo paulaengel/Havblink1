@@ -152,8 +152,7 @@ body {
   .menu-checkbox {
     display: none; /* Skjuler checkboxen */
   }
-  
-  
+
   /* Responsiv styling */
   
   @media (max-width: 768px) {
@@ -266,12 +265,23 @@ body {
   font-size: 30px;
 }
 
-.vinsmagning-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.vinsmag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.vinsmag-card {
+  max-width: 300px;
+}
+
+.vinsmag-card img {
+  width: 100%;
+  height: auto;
+}
 
 .vinsmag-card h2 {
   font-size: 30px; 
@@ -300,7 +310,11 @@ body {
   padding: 12px 24px;
   font-size: 1em;
 }
-
+.knap a:hover {
+  background-color: white;
+  color: #1a2a40;
+  border: 2px solid #1a2a40;
+}
 /* Hvem er vi og oplev havblink section */
 
 .hvemervisection {
@@ -388,6 +402,11 @@ body {
   padding: 12px 24px;
   font-size: 1em;
 }
+.knap2 a:hover {
+  background-color: white;
+  color: #1a2a40;
+  border: 2px solid #1a2a40;
+}
 
 .knap1 {
   margin-top: 40px;
@@ -400,6 +419,11 @@ body {
   text-decoration: none;
   padding: 12px 24px;
   font-size: 1em;
+}
+.knap1 a:hover {
+  background-color: white;
+  color: #1a2a40;
+  border: 2px solid #1a2a40;
 }
 
 /* Fra druen til glasset sektion */
@@ -477,6 +501,20 @@ body {
   font-size: 30px;
   color: #4C413B;
   font-weight: 100;
+}
+.produkt-link {
+  text-decoration: none; /* Fjern understregning på hele linket */
+  color: inherit; /* Behold farver fra indholdet */
+  display: inline-block;
+}
+
+.produkt-kort {
+  transition: 0.3s ease;
+}
+
+.produkt-kort:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* Anmeldelser */
@@ -647,6 +685,10 @@ body {
     cursor: pointer;
   }
 
+  .regler p {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {

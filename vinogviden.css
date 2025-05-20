@@ -150,8 +150,7 @@ body {
   .menu-checkbox {
     display: none; /* Skjuler checkboxen */
   }
-  
-  
+
   /* Responsiv styling */
   
   @media (max-width: 768px) {
@@ -204,7 +203,7 @@ body {
     .mega-box {
       display: none !important; /* Skjuler dropdown-menuen */
     }
-    
+
   }
 /* Herosection 1 */
 
@@ -219,7 +218,8 @@ body {
   
   .overlay-image {
     position: absolute;
-    top: 10%;
+    top: 25%;
+    left: 25%;
     color: white;
     padding: 40px;
   }
@@ -229,11 +229,7 @@ body {
     text-transform: uppercase;
     font-weight: 100;
     color: white;
-    margin-bottom: 0;
     font-family: "the seasons", serif;
-  }
-  .overlay-image h2 + h2 {
-    margin-top: -10px;
   }
 
 /* Alle 4 artikler, Hvad er dansk hvidvin?, VHvidvin og mad, Tips og tricks, Havblink Hvidvin til enhver anledning */
@@ -287,6 +283,22 @@ body {
     text-decoration: none;
     padding: 12px 24px;
     }
+
+    .hvidvin-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        transition: 0.3s ease;
+      }
+      
+      .hvidvin-link:hover .hvidvin-container {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      
+      .hvidvin-container {
+        transition: 0.3s ease;
+      }
 
   /* Tilmed nyhedsbrev */
 
@@ -436,9 +448,23 @@ body {
             
               p {
                 font-size: 12px !important;
-            
+                padding-left: 30px;
+                padding-right: 30px;
               }
               h3 {
                 font-size: 15px !important;
               }
+
+                .hvidvin-container img {
+                width: 70%;
+                }
+
+                .overlay-image {
+                    position: absolute;
+                    top: 30%;
+                    left: 32%;
+                    color: white;
+                    padding: 40px;
+                  }
+            
         }

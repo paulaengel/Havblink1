@@ -150,8 +150,7 @@ body {
   .menu-checkbox {
     display: none; /* Skjuler checkboxen */
   }
-  
-  
+
   /* Responsiv styling */
   
   @media (max-width: 768px) {
@@ -306,6 +305,20 @@ background-color: #1a2a40;
   text-decoration: none;
   padding: 12px 24px;
   }
+  .knap2 a {
+    background-color: #1a2a40;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1em;
+  }
+
+
+  .knap2 a:hover {
+    background-color: white;
+    color: #1a2a40;
+    border: 2px solid #1a2a40;
+  }
   
   .besøgbilleder-grid {
     display: grid;
@@ -393,6 +406,7 @@ background-color: #1a2a40;
     padding-right: 80px;
     padding-bottom: 45px;
   }
+
   .vinsmagning-grid img {
     display: block;
     width: 100%;
@@ -477,10 +491,20 @@ background-color: #1a2a40;
     padding: 12px 24px;
     font-size: 1em;
   }
+  .knap a:hover {
+    background-color: white;
+    color: #1a2a40;
+    border: 2px solid #1a2a40;
+  }
   .knap3 {
     text-align: right;
     padding-right: 80px;
     padding-bottom: 45px;
+  }
+  .knap3 a:hover {
+    background-color: white;
+    color: #1a2a40;
+    border: 2px solid #1a2a40;
   }
   .knap4 a {
     background-color: #1a2a40;
@@ -494,6 +518,12 @@ background-color: #1a2a40;
     padding-right: 80px;
     padding-bottom: 185px;
   }
+  .knap4 a:hover {
+    background-color: white;
+    color: #1a2a40;
+    border: 2px solid #1a2a40;
+  }
+
   .vinsmagning-grid img {
     display: block;
     width: 100%;

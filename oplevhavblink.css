@@ -311,8 +311,11 @@ background-color: #1a2a40;
     text-decoration: none;
     padding: 12px 24px;
     font-size: 1em;
-  }
 
+  }
+  .knap2 {
+   padding-bottom: 30px;
+      }
 
   .knap2 a:hover {
     background-color: white;

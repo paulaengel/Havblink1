@@ -273,32 +273,30 @@ body {
     margin-bottom: 32px;
   }
   
-  .knap-container {
+  .knap {
     text-align: center;
   }
   
-  .knap {
+  .knap a {
     background-color: #1a2a40;
     color: white;
     text-decoration: none;
     padding: 12px 24px;
     }
 
+    .knap a:hover {
+      background-color: white;
+      color: #1a2a40;
+      border: 2px solid #1a2a40;
+    }
+    .hvidvin-link:hover img {
+      filter: opacity(0.8); /* eller fx brightness(0.8) */
+    }
     .hvidvin-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-        transition: 0.3s ease;
-      }
-      
-      .hvidvin-link:hover .hvidvin-container {
-        opacity: 0.8;
-        cursor: pointer;
-      }
-      
-      .hvidvin-container {
-        transition: 0.3s ease;
-      }
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
 
   /* Tilmed nyhedsbrev */
 

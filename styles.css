@@ -402,11 +402,6 @@ body {
   padding: 12px 24px;
   font-size: 1em;
 }
-.knap2 a:hover {
-  background-color: white;
-  color: #1a2a40;
-  border: 2px solid #1a2a40;
-}
 
 .knap1 {
   margin-top: 40px;
@@ -419,11 +414,6 @@ body {
   text-decoration: none;
   padding: 12px 24px;
   font-size: 1em;
-}
-.knap1 a:hover {
-  background-color: white;
-  color: #1a2a40;
-  border: 2px solid #1a2a40;
 }
 
 /* Fra druen til glasset sektion */

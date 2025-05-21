@@ -1,3 +1,4 @@
+/* Grundlæggende styling */
 body {
     margin: 0;
     padding: 0;
@@ -277,6 +278,11 @@ body {
   padding: 12px 24px;
   font-size: 1em;
 }
+.knap1 a:hover {
+  background-color: white;
+  color: #1a2a40;
+  border: 2px solid #1a2a40;
+}
 
 /* Besøg vingården */
 
@@ -361,6 +367,7 @@ background-color: #1a2a40;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertical alignment */
+    margin-top: 60px;
   }
   
   .vinsmagning-content h2 {
@@ -407,7 +414,7 @@ background-color: #1a2a40;
   .knap3 {
     text-align: right;
     padding-right: 80px;
-    padding-bottom: 45px;
+    padding-bottom: 50px;
   }
 
   .vinsmagning-grid img {
@@ -450,6 +457,7 @@ background-color: #1a2a40;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertical alignment */
+  margin-top: 200px;
   }
   
   .event-content h2 {
@@ -503,6 +511,7 @@ background-color: #1a2a40;
     text-align: right;
     padding-right: 80px;
     padding-bottom: 45px;
+    margin-bottom: 93px;
   }
   .knap3 a:hover {
     background-color: white;
@@ -520,6 +529,7 @@ background-color: #1a2a40;
     text-align: right;
     padding-right: 80px;
     padding-bottom: 185px;
+    margin-bottom: 28px;
   }
   .knap4 a:hover {
     background-color: white;
@@ -582,6 +592,11 @@ background-color: #1a2a40;
     font-family: "montserrat", sans-serif;  
     font-weight: 100;
     border: none;
+  }
+  .nyhedsbrev-form button:hover {
+    background-color: white;
+    color: #5E534D;
+   
   }
 
   /* footer */
@@ -669,7 +684,7 @@ background-color: #1a2a40;
   .nyhedsbrev-form input[type="email"] {
     width: 80%;
   }
-   /* HERO SECTION */
+   /* hero section1 */
 .hero-section {
     position: relative;
     display: flex;
@@ -715,6 +730,7 @@ background-color: #1a2a40;
     padding: 30px 20px;
     padding-left: 100px;
     padding-right: 100px;
+    
   }
   
   .hero-content p {
@@ -729,20 +745,22 @@ background-color: #1a2a40;
     font-size: 12px;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 
   }
-  /* BESØG VINGÅRDEN */
+  /* besøg vingården */
   .besøg-content p {
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 20px;
   }
-  .knap {
+  .knap2 {
     text-align: center;
     font-size: 12px;
+    margin-top: 30px;
   }
-  /* VINSMAGNING */
+  /* vinsmagning */
   .vinsmagning-grid {
     display: flex;
     flex-direction: column;
@@ -769,14 +787,14 @@ background-color: #1a2a40;
     padding: 20px;
     font-size: 12px;
     padding-bottom: 30px;
+    margin-bottom: 20px;
   }
-
   
   .image-2 {
     order: 2;
   }
 
-  /* EVENT */
+  /* event */
   .event-grid {
     display: flex;
     flex-direction: column;
@@ -792,12 +810,19 @@ background-color: #1a2a40;
     text-align: center;
     
   }
-
+ /* knapper og body */
   .knap4 {
     text-align: center;
     padding: 20px 0;
     font-size: 12px;
     padding-bottom: 30px;
+  }
+  .knap4 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 12px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .image-2 {
@@ -816,6 +841,28 @@ background-color: #1a2a40;
   }
   h3 {
     font-size: 15px !important;
+  }
+  a {
+    font-size: 12px !important;
+    
+  }
+  .nyhedsbrev-form input[type="email"] {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  .nyhedsbrev-form button {
+    padding: 12px 20px;
+    font-size: 12px;
+    
+  }
+  .knap3 {
+   
+    padding-right: 20px;
+    padding-bottom: 45px;
+  }
+  
+  .event-content h2 {
+   margin-top: -150px;
   }
 }
 

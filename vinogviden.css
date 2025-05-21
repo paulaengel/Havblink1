@@ -1,3 +1,4 @@
+/* Grundlæggende styling */
 body {
     margin: 0;
     padding: 0;
@@ -151,7 +152,7 @@ body {
     display: none; /* Skjuler checkboxen */
   }
 
-  /* Responsiv styling */
+  /* Responsiv header */
   
   @media (max-width: 768px) {
     /* Viser burger-menu-ikonet på mindre skærme */
@@ -345,6 +346,12 @@ body {
     font-family: "montserrat", sans-serif;  
     font-weight: 100;
     border: none;
+
+  }
+  .nyhedsbrev-form button:hover {
+    background-color: white;
+    color: #5E534D;
+   
   }
 
   /* footer */
@@ -433,9 +440,16 @@ body {
           .nyhedsbrev-form {
             flex-direction: column;
           }
-        
+
           .nyhedsbrev-form input[type="email"] {
-            width: 80%;
+            padding: 12px 20px;
+            font-size: 12px;
+            width: 300px;
+          }
+          .nyhedsbrev-form button {
+            padding: 12px 20px;
+            font-size: 12px;
+            
           }
           
         /* body */
@@ -460,9 +474,12 @@ body {
                 .overlay-image {
                     position: absolute;
                     top: 30%;
-                    left: 32%;
+                    left: 30%;
                     color: white;
                     padding: 40px;
                   }
-            
+                  a {
+                    font-size: 12px !important;
+                    
+                  }
         }

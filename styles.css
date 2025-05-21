@@ -153,7 +153,7 @@ body {
     display: none; /* Skjuler checkboxen */
   }
 
-  /* Responsiv styling */
+  /* Responsiv header */
   
   @media (max-width: 768px) {
     /* Viser burger-menu-ikonet på mindre skærme */
@@ -245,6 +245,13 @@ body {
     font-size: 40px;
     font-weight: 100;
     margin-top: 0;
+  }
+
+  .druer img {
+    width: 100%;
+    height: auto;
+    margin-top: -140px;
+    position: relative;
   }
 
 /* Vinsmage sektion */
@@ -526,6 +533,7 @@ body {
   display: flex;
   justify-content: left;
   gap: 150px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -544,18 +552,26 @@ body {
   color: #4C413B;
   margin-top: 8px;
 }
+/* druekæde */
+.druer2 img {
+  width: 100%;
+  height: auto;
+  margin-top: -130px;
+  position: relative;
+}
 
 /* Tilmed nyhedsbrev */
 
 .nyhedsbrev {
   text-align: center;
-  padding: 60px;
+  padding-bottom: 50px;
   color: white;
   background-color: #D6CABB;
+  width: 100%;
 }
 
 .nyhedsbrev h2 {
-  font-size: 48px;  
+  font-size: 48px; 
 }
 
 .nyhedsbrev p {
@@ -592,6 +608,11 @@ body {
   font-family: "montserrat", sans-serif;  
   font-weight: 100;
   border: none;
+}
+.nyhedsbrev-form button:hover {
+  background-color: white;
+  color: #5E534D;
+ 
 }
 
 /* footer */
@@ -651,9 +672,11 @@ body {
   gap: 20px;
 }
 
-/*Responsive*/
+/*Responsiv styling*/
 
 @media (max-width: 768px) {
+
+  /*footer*/
   .footer-kolonner {
     display: flex;
     flex-direction: column;
@@ -674,14 +697,11 @@ body {
     font-size: 28px;
     cursor: pointer;
   }
-
-  .regler p {
-    font-size: 14px;
-    padding: 10px;
-  }
 }
 
 @media (max-width: 768px) {
+
+  /*Body*/
   h2 {
     font-size: 18px !important;
   }
@@ -702,6 +722,13 @@ body {
     font-size: 18px !important;
     padding-bottom: 10px;
   }
+  .knap1,
+  .knap2,
+  .knap {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /*Forside billede*/
   .overlay-image  h2 {
     margin-top: 80px;
     padding-top: 5px;
@@ -716,40 +743,17 @@ body {
   .section {
     margin-top: -20px;
   }
+  .overlay-image2 h2,
+  .overlay-image2 p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   .text-content,
   .text-content2,
   .vinsmag-card h2,
   .vinsmag-card p,
-  .footer-kolonne,
-  .nyhedsbrev h2,
-  .nyhedsbrev p {
-    text-align: center;
-  }
-
-  .nyhedsbrev-form {
-    flex-direction: column;
-  }
-
-  .nyhedsbrev-form input[type="email"] {
-    width: 80%;
-  }
-
-  .anmeldelse-grid {
-    gap: 30px;
-    padding-right: 150px;
-    text-align: left;
-    grid-template-columns: 2fr;
-    flex-direction: column;
-    padding-left: 100px;
-  }
-  .anmeldelse p {
-    align-items: left
-  
-  }
-
-  .anmeldelser h2 {
-    padding-right: 80px;
+  .footer-kolonne {
     text-align: center;
   }
   .vinsmag-grid {
@@ -763,17 +767,36 @@ body {
     padding: 20px;
     align-items: center;
   }
+  .druebillede,
+  .druebillede2,
+  .overlay-image2 {
+      display: none;
+    }
+    
+  /* Hvem er vi */
+  .hvemervisection {
+      grid-template-columns: 1fr; /* én kolonne i stedet for to */
+    }
+ .hvemervisection p {
+      text-align: center;
+    }
+/*Oplev Havblink */
+    .oplevhavblink-image {
+      order: -1; /* gør billedet til det første */
+    }
+    .oplevhavblink-section {
+      grid-template-columns: 1fr; /* én kolonne i stedet for to */
+  }
 
-  .overlay-image2 h2,
-  .overlay-image2 p {
-    padding-left: 10px;
-    padding-right: 10px;
+.oplevhavblink-section p {
+  text-align: center;
   }
 
   .produkt-info {
     flex-direction: column;
   }
 
+/*Karussel */
   .karussel img {
     width: 70%;
   }
@@ -784,35 +807,67 @@ body {
   .karussel h2 {
     gap: 20px;
   }
-  .druebillede,
-  .druebillede2,
-  .overlay-image2 {
-      display: none;
-    }
-    
-  .oplevhavblink-section {
-      grid-template-columns: 1fr; /* én kolonne i stedet for to */
+/*Druer */
+  .druer img {
+    display: none;
   }
-  
-  .hvemervisection {
-      grid-template-columns: 1fr; /* én kolonne i stedet for to */
-    }
-  
-    .oplevhavblink-image {
-      order: -1; /* gør billedet til det første */
-    }
+  .druer2 img {
+    display: none;
+  }
 
-.oplevhavblink-section p {
+/* Anmeldelser */
+  .anmeldelse-grid {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-bottom: 0;
+  flex-wrap: wrap;
+}
+.anmeldelse-grid {
+  gap: 30px;
+  padding-right: 150px;
+  text-align: left;
+  grid-template-columns: 2fr;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.anmeldelse p {
+  align-items: left
+
+}
+
+.anmeldelser h2 {
+  padding-right: 80px;
   text-align: center;
+}
+
+/*Nyhedsbrev*/
+.nyhedsbrev-form {
+  flex-direction: column;
+}
+
+.nyhedsbrev-form input[type="email"] {
+  width: 80%;
+}
+.nyhedsbrev h2 {
+  padding-top: 30px;
+}
+.nyhedsbrev {
+  margin-top: -20px;
+}
+.nyhedsbrev h2,
+  .nyhedsbrev p {
+    text-align: center;
   }
 
-  .hvemervisection p {
-    text-align: center;
-    }
-  .knap1,
-  .knap2,
-  .knap {
-    text-align: center;
+  .nyhedsbrev-form input[type="email"] {
+    padding: 12px 20px;
+    font-size: 12px;
+    width: 300px;
   }
-
+  .nyhedsbrev-form button {
+    padding: 12px 20px;
+    font-size: 12px;
+    
+  }
 }

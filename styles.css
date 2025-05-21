@@ -246,11 +246,12 @@ body {
     font-weight: 100;
     margin-top: 0;
   }
+/* druekæde */
 
   .druer img {
     width: 100%;
     height: auto;
-    margin-top: -140px;
+    margin-top: -170px;
     position: relative;
   }
 
@@ -556,7 +557,7 @@ body {
 .druer2 img {
   width: 100%;
   height: auto;
-  margin-top: -130px;
+  margin-top: -160px;
   position: relative;
 }
 

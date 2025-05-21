@@ -41,9 +41,11 @@ body {
   
   header nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
-    background-color:#FAF8F3;
+    background-color: #FAF8F3;
     padding-bottom: 40px;
   }
   
@@ -204,63 +206,150 @@ body {
     .mega-box {
       display: none !important; /* Skjuler dropdown-menuen */
     }
-
+    
   }
-  section {
+ /* Overskrift og pil*/
+  .overskrift {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
   }
   
-  section .text {
-    flex: 1 1 50%;
-  }
-  
-  section .image {
-    flex: 1 1 50%;
-  }
-  
-  section .image img {
-    width: 100%;
+  .back-link img {
+    width: 24px;
     height: auto;
-    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
   }
   
-  section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+  .back-link img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Vintraditioner */
+  .split-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
   }
   
-  section p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
+  .split-section .text {
+    flex: 1;
+    padding-left: 50px;
+    
+    
   }
   
-  /* Skift rækkefølge på midtersektionen */
-  section.solaris {
-    flex-direction: row-reverse;
+  .split-section .image {
+    flex: 1;
+    min-width: 60%;
   }
   
-  /* Mobilvenlig version */
-  @media screen and (max-width: 768px) {
-    section {
+  .split-section .image img {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Mobilvenligt layout */
+  @media (max-width: 768px) {
+    .split-section {
       flex-direction: column;
-      padding: 40px 20px;
     }
   
-    section.solaris {
+    .split-section .image img {
+        height: 500px; 
+    }
+  }
+  /* Solarisdrue */
+
+.split-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.split-section2 .text {
+  flex: 1;
+  padding-left: 50px;
+  
+}
+
+.split-section2 .image {
+  flex: 1;
+  min-width: 60%;
+ 
+}
+
+.split-section2 .image img {
+  width: 100%;
+  height: 600px; 
+  object-fit: cover;
+  display: block;
+  
+}
+
+/* Mobilvenligt layout */
+@media (max-width: 768px) {
+  .split-section2 {
+    flex-direction: column;
+  }
+
+  .split-section2 .image img {
+    height: 500px; 
+  }
+}
+
+/* Bæredygtighed */
+  
+  .split-section3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .split-section3 .text {
+    flex: 1;
+    padding-left: 50px;
+  }
+  
+  .split-section3 .image {
+    flex: 1;
+    min-width: 60%;
+   
+  }
+  
+  .split-section3 .image img {
+    width: 100%;
+    height: 600px; 
+    object-fit: cover;
+    display: block;
+    
+  }
+  
+  /* Mobilvenligt layout */
+  @media (max-width: 768px) {
+    .split-section3 {
       flex-direction: column;
     }
   
-    section .text,
-    section .image {
-      flex: 1 1 100%;
+    .split-section3 .image img {
+      height: 500px; 
     }
   }
 
@@ -421,20 +510,24 @@ body {
         
             h2 {
                 font-size: 20px !important;
+                padding-left: 60px;
+                padding-right: 110px;
+                text-align: center;
+                padding-top: 50px;
               }
             
               p {
                 font-size: 12px !important;
-                padding-left: 30px;
-                padding-right: 30px;
+                padding-left: 100px;
+                padding-right: 150px;
+                text-align: center;
+                padding-bottom: 50px;
+            
               }
               h3 {
                 font-size: 15px !important;
               }
 
-                .hvidvin-container img {
-                width: 70%;
-                }
 
                 .overlay-image {
                     position: absolute;

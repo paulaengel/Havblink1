@@ -40,6 +40,82 @@ body {
   
   /* navigation styling */
   
+  .nav-item > a {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 4px;
+  }
+
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-links li a:hover {
+  text-decoration: underline;
+  }
+  .nav-item > a {
+    text-decoration: underline;
+  }
+  
+  .nav-links2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links2 li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-links2 li a:hover {
+  text-decoration: underline;
+  }
+  .nav-links3 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links3 li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-links3 li a:hover {
+  text-decoration: underline;
+  }
+
   header nav {
     position: fixed;
     width: 100%;
@@ -66,28 +142,6 @@ body {
     font-family: "playfair-display";
   }
   
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-family: "montserrat", sans-serif;
-  }
-  
-  .nav-links li a {
-    color: #4C413B;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 9px 30px;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-    font-family: "montserrat", sans-serif;
-    font-weight: 100;
-  }
-  
-  .nav-links li a:hover {
-  text-decoration: underline;
-  }
   
   /* Mega dropdown-menu styling */
   .mega-box {
@@ -442,8 +496,8 @@ body {
   font-size: 18px;
   font-weight: 100;
   text-align: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 400px;
+  padding-right: 400px;
 }
 .druebillede img {
   width: 100%;
@@ -501,8 +555,8 @@ body {
   font-weight: 100;
 }
 .produkt-link {
-  text-decoration: none; /* Fjern understregning på hele linket */
-  color: inherit; /* Behold farver fra indholdet */
+  text-decoration: none;
+  color: inherit; 
   display: inline-block;
 }
 
@@ -733,6 +787,7 @@ body {
   .overlay-image  h2 {
     margin-top: 80px;
     padding-top: 5px;
+    font-size: 30px !important;
   }
   .overlay-image  h3 {
     font-size: 12px !important;
@@ -859,6 +914,8 @@ body {
 .nyhedsbrev h2,
   .nyhedsbrev p {
     text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .nyhedsbrev-form input[type="email"] {

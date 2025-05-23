@@ -38,7 +38,17 @@ body {
   }
   
    /* navigation styling */
+
+   .footer .logo img {
+    width: 100px;
+    height: auto;
+  }
   
+   .logo img {
+    width: 100px;
+    height: auto;
+  }
+
    .nav-item2 > a {
     border-bottom: 1px solid black;
     text-decoration: none;

@@ -38,7 +38,16 @@ body {
   }
   
   /* navigation styling */
-  
+  .footer .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
   header nav {
     position: fixed;
     width: 100%;

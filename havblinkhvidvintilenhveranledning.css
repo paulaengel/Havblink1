@@ -1,0 +1,766 @@
+/* Grundlæggende styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF8F3;
+    overflow-x: hidden;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+    color: #4C413B;
+  }
+  
+  p {
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+    line-height: 1.5;
+    font-size: 18px;
+    color: #4C413B;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 110px;
+    padding-bottom: 50px;
+    color: #163E61;
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    
+  }
+  
+  h2 {
+    font-family: "the seasons", serif;
+    font-size: 48px;
+    color: #163E61;
+    font-weight: bold
+    
+  }
+  
+   /* navigation styling */
+
+   .footer .logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+   .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+   .nav-item2 > a {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    padding-bottom: 4px;
+  }
+
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+    
+  }
+  
+  .nav-links li a:hover {
+  text-decoration: underline;
+  }
+  .nav-item > a {
+    text-decoration: underline;
+  }
+  
+  .nav-links2 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links2 li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-links2 li a:hover {
+  text-decoration: underline;
+  }
+  .nav-links3 {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .nav-links3 li a {
+    color: #4C413B;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 9px 30px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    font-family: "montserrat", sans-serif;
+    font-weight: 100;
+  }
+  
+  .nav-links3 li a:hover {
+  text-decoration: underline;
+  }
+
+  header nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color:#FAF8F3;
+    padding-bottom: 40px;
+  }
+  
+  .wrapper {
+    position: relative;
+    padding: 0 30px;
+    height: 70px;
+    margin: auto;
+    display: flex; /* Aktivere flexbox, for at få elementerne vandret / ved siden af hinanden */
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper .logo a {
+    color: #4C413B;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: "playfair-display";
+  }
+  
+  /* Mega dropdown-menu styling */
+  .mega-box {
+    display: none; /* Skjuler dropdown-menuen som standard */
+    position: absolute; /* Placerer dropdown-menuen i forhold til navigationen, hvor vi har sat position: relative* - Hvis denne blev fjernet vil dropwdown ikke længere opføre sig som vi ønsker, men blot som et almindeligt blokelement */
+    left: 0; /* Placerer dropdown-menuen til venstre for navigationen */
+    width: 100%;
+    padding-top: 20px;
+    top: 50px; /* Placerer dropdown-menuen 50 pixels ned i forhold til toppen af nærmeste potionerede forældre */
+    z-index: 1000;
+  }
+  
+  .nav-links li:hover .mega-box {
+    display: block; /* Viser dropdown-menuen ved hover */
+  }
+  
+  .mega-box .content {
+    background-color: #FAF8F3;
+    border: 10px;
+    padding: 10px 40px; 
+    width: 100%; /* Giver dropdown-menuen en bredde på 100% af dens forælder */
+   
+    flex-direction: row;
+  }
+  
+  .main {
+    line-height: 30px;
+  }
+  
+  .main p {
+    color:  #4C413B;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  
+  .mega-links li {
+    margin-left: -40px;
+  }
+  
+  .mega-links li {
+    list-style: none; /* Fjerner punkttegn fra listen */
+  }
+  
+  .mega-links li a {
+    text-decoration: none; /*fjerner understregning fra links */
+    color:  #4C413B;
+    font-size: 16px;
+    padding: 5px 0;
+    display: inline-block; /* Kan stå på linje som andre elementer, og samtidig opføre sig som et block-element, hvor man kan give det bredde, højde, padding m.m. */
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  /* Burger-menu styling */
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem; /* Svarende til 32px - 2 x 16px som er standard fontstørrelsen */
+    cursor: pointer;
+    color: #4C413B;
+  }
+  
+  .menu-checkbox {
+    display: none; /* Skjuler checkboxen */
+  }
+
+  /* Responsiv header */
+  
+  @media (max-width: 768px) {
+    /* Viser burger-menu-ikonet på mindre skærme */
+    .menu-icon {
+      display: block;
+    }
+  /* Navigation-links: skjules som standard på mobil og vises som en dropdown-menu */
+    .nav-links {
+      display: none; /* Skjuler navigationen */
+      flex-direction: column; /* Gør navigationen lodret */
+      background-color: #FAF8F3; /* Baggrundsfarve til navigationen */
+      position: absolute; /* Placerer navigationen som en overlay */
+      top: 50px; /* Placerer navigationen lige under headeren */
+      right: 0; /* Justerer navigationen til højre */
+      width: 100%; /* Navigationen fylder hele bredden */
+      z-index: 1000; /* Sørger for, at navigationen vises øverst */
+      padding: 10px; /* Tilføjer indvendig afstand */
+    }
+  /* Når checkboxen er markeret, vises navigationen */
+    .menu-checkbox:checked + .menu-icon + .logo + .nav-links {
+      display: flex; /* Viser navigationen */
+    }
+  /* Navigationselementer: hver liste fylder hele bredden */
+    .nav-links li {
+      width: 100%;/* Gør hvert element 100% bredt */
+    }
+  /* Links i navigationen: styling til mobil */
+    .nav-links li a {
+      display: block; /* Gør links til blokkelementer */
+      padding: 15px; /* Tilføjer indvendig afstand */
+      font-size: 18px; /* Øger tekststørrelsen for bedre læsbarhed */
+      color: #000000; /* Sort tekstfarve */
+    }
+  /* Dropdown-menu: vises, når brugeren holder musen over */
+    .nav-links li:hover .mega-box {
+      display: block; /* Viser dropdown-menuen */
+    }
+  /* Dropdown-menuens indhold: styling til mobil */
+    .mega-box .content {
+      flex-direction: column; /* Gør dropdown-menuens indhold lodret */
+      background-color: #FAF8F3;/* Baggrundsfarve */
+    }
+  
+    /* Dropdown-menuens sektioner: fylder hele bredden */
+    .main {
+      width: 100%; /* Gør hver sektion 100% bred */
+    }
+  /* Skjuler dropdown-menuen som standard */
+    .mega-box {
+      display: none !important; /* Skjuler dropdown-menuen */
+    }
+    
+  }
+
+  .forsidebillede img {
+    width: 100%;
+
+  }
+  /* Overskrift og pil */
+  .overskrift {
+    position: relative;
+    text-align: center;
+  }
+  
+
+  .overskrifttekst {
+    font-size: 60px;
+    margin: 0;
+    padding-top: 100px;
+  }
+  
+  /* Pilen placeres helt ude til venstre */
+  .back-link {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    padding-left: 90px; 
+  }
+  
+  .back-link img {
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  /* Vintraditioner */
+  .split-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   
+  }
+  
+  .split-section .text {
+    flex: 1;
+    padding-left: 50px;
+    
+    
+  }
+  
+  .split-section .image {
+    flex: 1;
+    min-width: 60%;
+  }
+  
+  .split-section .image img {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    padding-left: 325px;
+  }
+  
+  /* Mobilvenligt layout */
+  @media (max-width: 768px) {
+    .split-section {
+      flex-direction: column;
+    }
+  
+    .split-section .image img {
+        height: 500px; 
+    }
+    .split-section .image img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        padding-left: 0px;
+      }
+  }
+  /* Solarisdrue */
+
+.split-section2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  background-color: white;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.split-section2 .text {
+  flex: 1;
+  padding-left: 50px;
+  
+}
+
+.split-section2 .image {
+  flex: 1;
+  min-width: 60%;
+ 
+}
+
+.split-section2 .image img {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    padding-left: 325px;
+}
+
+/* Mobilvenligt layout */
+@media (max-width: 768px) {
+  .split-section2 {
+    flex-direction: column;
+  }
+
+  .split-section2 .image img {
+    height: 500px; 
+  }
+  .split-section2 .image img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    padding-left: 0px;
+  }
+}
+
+/* Bæredygtighed */
+  
+  .split-section3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .split-section3 .text {
+    flex: 1;
+    padding-left: 50px;
+  }
+  
+  .split-section3 .image {
+    flex: 1;
+    min-width: 60%;
+   
+  }
+  
+  .split-section3 .image img {
+    width: 70%;
+    object-fit: cover;
+    display: block;
+    padding-left: 325px;
+    
+  }
+  
+  /* Mobilvenligt layout */
+  @media (max-width: 768px) {
+    .split-section3 {
+      flex-direction: column;
+    }
+  
+    .split-section3 .image img {
+      height: 500px; 
+    }
+    .split-section3 .image img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        padding-left: 0px;
+      }
+  }
+
+  /* Tilmed nyhedsbrev */
+
+.nyhedsbrev {
+    text-align: center;
+    padding: 60px;
+    color: white;
+    background-color: #D6CABB;
+  }
+  
+  .nyhedsbrev h2 {
+    font-size: 48px;  
+  }
+  
+  .nyhedsbrev p {
+    font-size: 18px;
+    display: flex;
+    color: #4C413B;
+    margin-bottom: 30px;
+    font-family: "montserrat", sans-serif;
+    justify-content: center;
+  }
+  
+  .nyhedsbrev-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .nyhedsbrev-form input[type="email"] {
+    padding: 15px 20px;
+    width: 450px;
+    font-size: 16px;
+    font-family: "montserrat", sans-serif;  
+    font-weight: 100;
+    border: none;
+  }
+  
+  .nyhedsbrev-form button {
+    background-color: #5E534D;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "montserrat", sans-serif;  
+    font-weight: 100;
+    border: none;
+
+  }
+  .nyhedsbrev-form button:hover {
+    background-color: white;
+    color: #5E534D;
+   
+  }
+
+  /* Udforsk mere - karussel */
+
+.udforsk-karussel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 250px;
+  margin-bottom: 70px;
+  padding-left: 80px;
+  
+}
+
+.produkt-kort {
+  flex-shrink: 0;
+  width: 380px;
+  scroll-snap-align: center;
+}
+
+.produkt-kort img {
+  width: 150%;
+  padding-right: 80px;
+  display: block;
+}
+
+.produkt-info {
+  display: flex;
+  justify-content: space-between;
+  color: #4C413B;
+}
+
+.karussel h2 {
+  padding-left: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.karussel h3 {
+  font-family: "the seasons", serif;
+  font-size: 30px;
+  color: #4C413B;
+  font-weight: 100;
+}
+.produkt-link {
+  text-decoration: none;
+  color: inherit; 
+  display: inline-block;
+}
+
+.produkt-kort {
+  transition: 0.3s ease;
+}
+
+.produkt-kort:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+  /* footer */
+
+.footer {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-logo {
+    margin-top: 50px;
+  }
+  
+  .footer-logo h2 {
+    font-family: serif;
+    font-size: 40px;
+    display: flex;
+  }
+  
+  .footer-kolonner {
+    display: flex;
+    gap: 170px;
+    justify-content: center;
+  }
+  
+  .footer-kolonne h3 {
+    font-weight: bold;
+    font-family: "montserrat", sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .footer-kolonne ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-kolonne li {
+    margin-bottom: 2px;
+  }
+  
+  .footer-kolonne a {
+    text-decoration: none;
+    color: #4C413B;
+    font-size: 18px;
+  }
+  
+  .social-icons img {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 30px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+
+
+    /* Responsiv */
+
+    @media (max-width: 768px) {
+
+        /* nyhedsbrev */
+            .nyhedsbrev h2,
+          .nyhedsbrev p {
+            text-align: center;
+          }
+        
+          .nyhedsbrev-form {
+            flex-direction: column;
+          }
+
+          .nyhedsbrev-form input[type="email"] {
+            padding: 12px 20px;
+            font-size: 12px;
+            width: 300px;
+          }
+          .nyhedsbrev-form button {
+            padding: 12px 20px;
+            font-size: 12px;
+            
+          }
+          .udforsk-karussel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            gap: 50px;
+            margin-bottom: 70px;
+            padding-left: 80px;
+          }
+          .produkt-kort img {
+            width: 100%;
+            display: block;
+            
+          }
+          .split-section .text {
+            flex: 1;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+
+          }
+          .split-section2 .text {
+            flex: 1;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+
+          }
+          .split-section3 .text {
+            flex: 1;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+
+          }
+          .karussel h2 {
+            padding-left: 0px;
+            padding-right: 350px;
+            padding-bottom: 50px;
+          }
+          
+        /* body */
+        
+            h2 {
+                font-size: 20px !important;
+              
+                text-align: center;
+                padding-top: 50px;
+              }
+            
+              p {
+                font-size: 12px !important;
+                
+            
+              }
+              h3 {
+                font-size: 15px !important;
+              }
+
+
+                .overlay-image {
+                    position: absolute;
+                    top: 30%;
+                    left: 30%;
+                    color: white;
+                    padding: 40px;
+                  }
+                  a {
+                    font-size: 12px !important;
+                    
+                  }
+
+                  .forsidebillede img {
+                    width: 100%;
+                    padding-top: 100px;
+                  }
+                  .back-link {
+                    position: absolute;
+                    left: 0;
+                    top: 65%;
+                    padding-left: 90px; 
+                  }
+                  .split-section {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    align-items: center;
+                    background-color: white;
+                    margin-top: 40px;
+                    margin-bottom: 100px;
+                   
+                  }
+                  .overskrifttekst {
+                    font-size: 60px;
+                    margin: 0;
+                   padding-top: 30px;
+                  }
+                  
+        }
+        @media (max-width: 768px) {
+
+          /*footer*/
+          .footer-kolonner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+          }
+        
+          .footer-kolonne {
+            text-align: center;
+          }
+        
+          .social-icons {
+            justify-content: center;
+          }
+        
+          .menu-toggle {
+            display: none;
+            font-size: 28px;
+            cursor: pointer;
+          }
+        }

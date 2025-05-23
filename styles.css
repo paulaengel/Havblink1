@@ -39,7 +39,16 @@ body {
   }
   
   /* navigation styling */
-  
+
+  .footer .logo img {
+    width: 100px;
+    height: auto;
+  }
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
   .nav-item > a {
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -264,6 +273,7 @@ body {
   
       /* forside herosektion */
 
+
   .forsidebillede {
     position: relative;
   }
@@ -408,7 +418,7 @@ body {
   color:  #4C413B;
   text-align: right;
   margin-bottom: 24px;
-  max-width: 300px;
+  max-width: 500px;
 }
 .oplevhavblink-section {
   display: grid;
@@ -450,7 +460,7 @@ body {
   color:  #4C413B;
   text-align: left;
   margin-bottom: 24px;
-  max-width: 300px;
+  max-width: 500px;
 }
 .knap2 {
   margin-top: 40px;
@@ -886,10 +896,6 @@ body {
   grid-template-columns: 2fr;
   flex-direction: column;
   padding-left: 100px;
-}
-.anmeldelse p {
-  align-items: left
-
 }
 
 .anmeldelser h2 {

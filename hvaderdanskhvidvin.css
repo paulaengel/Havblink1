@@ -278,8 +278,7 @@ body {
     
     }
     .nav-links .nav-item > a {
-    font-size: 25px !important;   /* Større tekst */
-    font-weight: bold;  
+    font-size: 25px !important;   /* Større tekst */ 
     color: #163E61 !important;
     display: block;
     text-align: left;    /* Centreret tekst */
@@ -443,7 +442,6 @@ body {
     .split-section3 {
       flex-direction: column;
     }
-  
     .split-section3 .image img {
       height: 500px; 
     }
@@ -625,33 +623,44 @@ body {
     @media (max-width: 768px) {
 
         /* nyhedsbrev */
-            .nyhedsbrev h2,
-          .nyhedsbrev p {
-            text-align: center;
-          }
         
-          .nyhedsbrev-form {
-            flex-direction: column;
-          }
+        .nyhedsbrev-form input[type="email"] {
+          padding: 12px 20px;
+          font-size: 12px;
+        }
+        .nyhedsbrev-form button {
+          padding: 12px 20px;
+          font-size: 12px;
+        }
+        .nyhedsbrev h2,
+        .nyhedsbrev p {
+          text-align: center;
+        }
+      
+        .nyhedsbrev-form {
+          flex-direction: column;
+        }
+      
+        .nyhedsbrev-form input[type="email"] {
+          width: 80%;
+        }
+        .udforsk-karussel .produkt-kort img {
+          width: 90%; /* Reducer billedets bredde til 80% */
+          margin: 0 auto; /* Centrer billedet */
+        
+        }
+        .udforsk-karussel {
+          gap: 0;
+          margin-left: 30px;
+        }
 
-          .nyhedsbrev-form input[type="email"] {
-            padding: 12px 20px;
-            font-size: 12px;
-            width: 300px;
+          .karussel h2 {
+            padding-left: 30px !important;
+            white-space: nowrap;
           }
-          .nyhedsbrev-form button {
-            padding: 12px 20px;
-            font-size: 12px;
-            
-          }
-          .udforsk-karussel {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            scroll-behavior: smooth;
-            gap: 50px;
-            margin-bottom: 70px;
-            padding-left: 80px;
+          .karussel h3 {
+            padding-left: 10px !important;
+            white-space: nowrap;
           }
           .produkt-kort img {
             width: 100%;
@@ -660,22 +669,22 @@ body {
           }
           .split-section .text {
             flex: 1;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
             text-align: center;
 
           }
           .split-section2 .text {
             flex: 1;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
             text-align: center;
 
           }
           .split-section3 .text {
             flex: 1;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 50px;
+            padding-right: 50px;
             text-align: center;
 
           }
@@ -741,7 +750,9 @@ body {
                     margin: 0;
                    padding-top: 30px;
                   }
-                  
+                  .nyhedsbrev {
+                    padding-top: 0;
+                  }
         }
         @media (max-width: 768px) {
 
@@ -765,5 +776,15 @@ body {
             display: none;
             font-size: 28px;
             cursor: pointer;
+          }
+          .icons_header img {
+            width: 140px;
+            height: auto;
+          }
+          .back-link {
+            position: absolute;
+            left: 0;
+            top: 65%;
+            padding-left: 10px; 
           }
         }

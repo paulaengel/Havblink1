@@ -254,7 +254,7 @@ body {
     }
     .nav-links .nav-item > a {
     font-size: 25px !important; 
-    font-weight: bold;  
+    
     color: #163E61 !important;
     display: block;
     text-align: left;   
@@ -303,9 +303,9 @@ body {
   
   .overlay-image {
     position: absolute;
-    top: 10%;
+    top: 15%;
     color: white;
-    padding: 40px;
+    padding: 20px;
     
   }
   
@@ -813,9 +813,9 @@ body {
   }
   /*Forside billede*/
   .overlay-image  h2 {
-    margin-top: 80px;
-    padding-top: 5px;
-    font-size: 30px !important;
+    margin-top: 40px;
+    padding-top: 10px;
+    font-size: 35px !important;
   }
   .overlay-image  h3 {
     font-size: 12px !important;
@@ -882,15 +882,21 @@ body {
 
 /*Karussel */
   .karussel img {
-    width: 70%;
+    width: 80%;
+   
   }
   .udforsk-karussel {
-    gap: 0px;
+    gap: 0;
+    margin-left: 30px;
   }
-
   .karussel h2 {
-    gap: 20px;
+    padding-left: 30px; 
   }
+  .karussel h3 {
+    padding-left: 10px !important;
+    white-space: nowrap;
+  }
+ 
 /*Druer */
   .druer img {
     display: none;
@@ -900,56 +906,50 @@ body {
   }
 
 /* Anmeldelser */
-  .anmeldelse-grid {
-  display: flex;
-  justify-content: left;
-  gap: 20px;
-  margin-bottom: 0;
-  flex-wrap: wrap;
-}
+  
 .anmeldelse-grid {
   gap: 30px;
-  padding-right: 150px;
   text-align: left;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr;
   flex-direction: column;
-  padding-left: 100px;
+  align-items: center;
+
 }
 
 .anmeldelser h2 {
-  padding-right: 80px;
-  text-align: center;
+  flex-direction: column;
+  text-align: left;
+}
+.anmeldelser p {
+  padding-right: 100px;
 }
 
 /*Nyhedsbrev*/
 .nyhedsbrev-form {
   flex-direction: column;
 }
-
+.nyhedsbrev p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .nyhedsbrev-form input[type="email"] {
   width: 80%;
-}
-.nyhedsbrev h2 {
-  padding-top: 30px;
-}
-.nyhedsbrev {
-  margin-top: -20px;
 }
 .nyhedsbrev h2,
   .nyhedsbrev p {
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-top: 30px;
   }
-
-  .nyhedsbrev-form input[type="email"] {
-    padding: 12px 20px;
-    font-size: 12px;
-    width: 300px;
-  }
+.nyhedsbrev {
+  margin-top: -20px;
+}
   .nyhedsbrev-form button {
     padding: 12px 20px;
     font-size: 12px;
     
+  }
+  .icons_header img {
+    width: 140px;
+    height: auto;
   }
 }

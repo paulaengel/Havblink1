@@ -292,8 +292,7 @@ body {
     
     }
     .nav-links .nav-item > a {
-    font-size: 25px !important;   /* Større tekst */
-    font-weight: bold;  
+    font-size: 25px !important;   /* Større tekst */  
     color: #163E61 !important;
     display: block;
     text-align: left;    /* Centreret tekst */
@@ -531,25 +530,15 @@ body {
               justify-content: center;
             }
         /* nyhedsbrev */
-            .nyhedsbrev h2,
-          .nyhedsbrev p {
-            text-align: center;
-          }
-        
-          .nyhedsbrev-form {
-            flex-direction: column;
-          }
-
-          .nyhedsbrev-form input[type="email"] {
-            padding: 12px 20px;
-            font-size: 12px;
-            width: 300px;
-          }
-          .nyhedsbrev-form button {
-            padding: 12px 20px;
-            font-size: 12px;
-            
-          }
+        .nyhedsbrev-form input[type="email"] {
+          padding: 12px 20px;
+          font-size: 12px;
+        }
+        .nyhedsbrev-form button {
+          padding: 12px 20px;
+          font-size: 12px;
+          
+        }
           
         /* body */
         
@@ -573,12 +562,16 @@ body {
                 .overlay-image {
                     position: absolute;
                     top: 30%;
-                    left: 30%;
+                    left: 20%;
                     color: white;
                     padding: 40px;
                   }
                   a {
                     font-size: 12px !important;
                     
+                  }
+                  .icons_header img {
+                    width: 140px;
+                    height: auto;
                   }
         }

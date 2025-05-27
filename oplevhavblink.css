@@ -289,7 +289,6 @@ body {
     }
     .nav-links .nav-item > a {
     font-size: 25px !important;   /* Større tekst */
-    font-weight: bold;  
     color: #163E61 !important;
     display: block;
     text-align: left;    /* Centreret tekst */
@@ -767,18 +766,6 @@ background-color: #1a2a40;
       justify-content: center;
     }
 
-    .nyhedsbrev h2,
-  .nyhedsbrev p {
-    text-align: center;
-  }
-
-  .nyhedsbrev-form {
-    flex-direction: column;
-  }
-
-  .nyhedsbrev-form input[type="email"] {
-    width: 80%;
-  }
    /* hero section1 */
 .hero-section {
     position: relative;
@@ -797,7 +784,7 @@ background-color: #1a2a40;
   
   .overlay-text {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -20%);
     padding-left: 30px;
@@ -806,14 +793,15 @@ background-color: #1a2a40;
   }
   
   .overlay-text h2 {
-    font-size: 20px;
+    font-size: 10px;
     letter-spacing: 2px;
     font-weight: 300;
     margin: 0;
+    line-height: 0.1;
   }
   
   .overlay-text h1 {
-    font-size: 48px;
+    font-size: 30px;
     margin: 0;
     font-weight: 400;
     text-align: left;
@@ -823,8 +811,8 @@ background-color: #1a2a40;
   .hero-content {
     text-align: center;
     padding: 30px 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     
   }
   
@@ -846,8 +834,8 @@ background-color: #1a2a40;
   }
   /* besøg vingården */
   .besøg-content p {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-bottom: 20px;
   }
   .knap2 {
@@ -872,9 +860,9 @@ background-color: #1a2a40;
   .vinsmagning-content h3,
   .vinsmagning-content p {
     text-align: center;
-    padding: 0;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
   }
 
   .knap3 {
@@ -903,6 +891,8 @@ background-color: #1a2a40;
   .event-content h2,
   .event-content p {
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
     
   }
  /* knapper og body */
@@ -948,7 +938,18 @@ background-color: #1a2a40;
   .nyhedsbrev-form button {
     padding: 12px 20px;
     font-size: 12px;
-    
+  }
+  .nyhedsbrev h2,
+  .nyhedsbrev p {
+    text-align: center;
+  }
+
+  .nyhedsbrev-form {
+    flex-direction: column;
+  }
+
+  .nyhedsbrev-form input[type="email"] {
+    width: 80%;
   }
   .knap3 {
    
@@ -958,6 +959,10 @@ background-color: #1a2a40;
   
   .event-content h2 {
    margin-top: -150px;
+  }
+  .icons_header img {
+    width: 140px;
+    height: auto;
   }
 }
 

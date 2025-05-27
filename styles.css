@@ -232,7 +232,7 @@ body {
       top: 50px; /* Placerer navigationen lige under headeren */
       right: 0; /* Justerer navigationen til højre */
       width: 100%; /* Navigationen fylder hele bredden */
-      z-index: 1000; /* Sørger for, at navigationen vises øverst */
+      z-index: 1000; /* Sørger for, at navigationen vises øverst */ 
       padding: 10px; /* Tilføjer indvendig afstand */
     }
   /* Når checkboxen er markeret, vises navigationen */
@@ -241,15 +241,33 @@ body {
     }
   /* Navigationselementer: hver liste fylder hele bredden */
     .nav-links li {
-      width: 100%;/* Gør hvert element 100% bredt */
+      width: 100%;
     }
   /* Links i navigationen: styling til mobil */
     .nav-links li a {
       display: block; /* Gør links til blokkelementer */
       padding: 15px; /* Tilføjer indvendig afstand */
-      font-size: 18px; /* Øger tekststørrelsen for bedre læsbarhed */
-      color: #000000; /* Sort tekstfarve */
+      font-size: 25px !important; 
+      color: #163E61 !important; 
+      font-family: "the seasons", serif;
+    
     }
+    .nav-links .nav-item > a {
+    font-size: 25px !important; 
+    font-weight: bold;  
+    color: #163E61 !important;
+    display: block;
+    text-align: left;   
+    padding: 1rem ;
+    font-family: "the seasons", serif;
+  }
+  .highlight-link .arrow {
+    display: none;
+  }
+
+  .nav-links .nav-item > a {
+    border-bottom: none;
+  }
   /* Dropdown-menu: vises, når brugeren holder musen over */
     .nav-links li:hover .mega-box {
       display: block; /* Viser dropdown-menuen */
@@ -488,7 +506,7 @@ body {
   font-size: 1em;
 }
 
-/* Fra druen til glasset sektion */
+/* Fra druen til glasset section */
 
 .overlay-image2 {
   position: absolute;
@@ -841,17 +859,17 @@ body {
     
   /* Hvem er vi */
   .hvemervisection {
-      grid-template-columns: 1fr; /* én kolonne i stedet for to */
+      grid-template-columns: 1fr; 
     }
  .hvemervisection p {
       text-align: center;
     }
 /*Oplev Havblink */
     .oplevhavblink-image {
-      order: -1; /* gør billedet til det første */
+      order: -1; 
     }
     .oplevhavblink-section {
-      grid-template-columns: 1fr; /* én kolonne i stedet for to */
+      grid-template-columns: 1fr; 
   }
 
 .oplevhavblink-section p {

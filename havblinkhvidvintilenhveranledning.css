@@ -268,6 +268,27 @@ body {
     .mega-box {
       display: none !important; /* Skjuler dropdown-menuen */
     }
+    .nav-links li a {
+      display: block; /* Gør links til blokkelementer */
+      padding: 15px; /* Tilføjer indvendig afstand */
+      font-size: 25px !important; /* Øger tekststørrelsen for bedre læsbarhed */
+      color: #163E61 !important; /* Sort tekstfarve */
+      font-family: "the seasons", serif;
+      border-bottom: none;
+    
+    }
+    .nav-links .nav-item > a {
+    font-size: 25px !important;   /* Større tekst */
+    font-weight: bold;  
+    color: #163E61 !important;
+    display: block;
+    text-align: left;    /* Centreret tekst */
+    padding: 1rem ;
+    font-family: "the seasons", serif;
+  }
+  .highlight-link .arrow {
+    display: none;
+  }
     
   }
 

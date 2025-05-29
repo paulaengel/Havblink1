@@ -1,4 +1,10 @@
 /* Grundlæggende styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -33,7 +39,7 @@ body {
     font-family: "the seasons", serif;
     font-size: 48px;
     color: #163E61;
-    font-weight: bold
+    font-weight: 400;
     
   }
   
@@ -49,12 +55,15 @@ body {
     height: auto;
   }
 
-  .nav-item2 > a {
+  .nav-item3 > a {
     border-bottom: 1px solid black;
     text-decoration: none;
     padding-bottom: 4px;
   }
-
+  .mega-box h2 {
+    font-size: 18px; 
+    font-weight: normal; 
+  }
 
   .nav-links {
     display: flex;
@@ -186,10 +195,7 @@ body {
     font-weight: bold;
     font-size: 25px;
   }
-  
-  .mega-links li {
-    margin-left: -40px;
-  }
+
   
   .mega-links li {
     list-style: none; /* Fjerner punkttegn fra listen */
@@ -318,7 +324,7 @@ body {
   .overlay-image {
     position: absolute;
     top: 28%;
-    left: 32%;
+    left: 28%;
     color: white;
     padding: 40px;
   }

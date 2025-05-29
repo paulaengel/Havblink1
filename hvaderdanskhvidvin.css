@@ -1,4 +1,10 @@
 /* Grundlæggende styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -33,7 +39,7 @@ body {
     font-family: "the seasons", serif;
     font-size: 48px;
     color: #163E61;
-    font-weight: bold
+    font-weight: 400;
     
   }
   
@@ -49,12 +55,15 @@ body {
     height: auto;
   }
 
-   .nav-item2 > a {
+   .nav-item3 > a {
     border-bottom: 1px solid black;
     text-decoration: none;
     padding-bottom: 4px;
   }
-
+  .mega-box h2 {
+    font-size: 18px; 
+    font-weight: normal; 
+  }
 
   .nav-links {
     display: flex;
@@ -698,9 +707,7 @@ body {
         
             h2 {
                 font-size: 20px !important;
-              
                 text-align: center;
-                padding-top: 50px;
               }
             
               p {
@@ -786,5 +793,17 @@ body {
             left: 0;
             top: 65%;
             padding-left: 10px; 
+          }
+          .split-section h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .split-section2 h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .split-section3 h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
           }
         }

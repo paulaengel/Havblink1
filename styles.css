@@ -1,5 +1,10 @@
 /* Grundlæggende styling */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +39,7 @@ body {
     font-family: "the seasons", serif;
     font-size: 48px;
     color: #163E61;
-    font-weight: bold
+    font-weight: 400;
     
   }
   
@@ -54,7 +59,10 @@ body {
     text-decoration: none;
     padding-bottom: 4px;
   }
-
+  .mega-box h2 {
+    font-size: 18px; 
+    font-weight: normal; 
+  }
 
   .nav-links {
     display: flex;
@@ -86,40 +94,7 @@ body {
     list-style: none;
     font-family: "montserrat", sans-serif;
   }
-  
-  .nav-links2 li a {
-    color: #4C413B;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 9px 30px;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-    font-family: "montserrat", sans-serif;
-    font-weight: 100;
-  }
-  
-  .nav-links2 li a:hover {
-  text-decoration: underline;
-  }
-  .nav-links3 {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    font-family: "montserrat", sans-serif;
-  }
-  
-  .nav-links3 li a {
-    color: #4C413B;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 9px 30px;
-    border-radius: 5px;
-    transition: all 0.4s ease;
-    font-family: "montserrat", sans-serif;
-    font-weight: 100;
-  }
+
   
   .nav-links3 li a:hover {
   text-decoration: underline;
@@ -143,14 +118,6 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  .wrapper .logo a {
-    color: #4C413B;
-    font-size: 30px;
-    text-decoration: none;
-    font-family: "playfair-display";
-  }
-  
   
   /* Mega dropdown-menu styling */
   .mega-box {
@@ -187,7 +154,7 @@ body {
   }
   
   .mega-links li {
-    margin-left: -40px;
+    margin-left: -30px;
   }
   
   .mega-links li {
@@ -198,7 +165,6 @@ body {
     text-decoration: none; /*fjerner understregning fra links */
     color:  #4C413B;
     font-size: 16px;
-    padding: 5px 0;
     display: inline-block; /* Kan stå på linje som andre elementer, og samtidig opføre sig som et block-element, hvor man kan give det bredde, højde, padding m.m. */
     font-family: 'Work Sans', sans-serif;
   }
@@ -333,7 +299,7 @@ body {
   .druer img {
     width: 100%;
     height: auto;
-    margin-top: -170px;
+    margin-top: -150px;
     position: relative;
   }
 
@@ -347,9 +313,9 @@ body {
 .section h1 {
   font-size: 48px;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  padding-bottom: 50px;
   color: #163E61;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .section h2 {
   font-size: 30px;
@@ -524,8 +490,9 @@ body {
   font-size: 18px;
   font-weight: 100;
   text-align: center;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-top: 30px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .druebillede img {
   width: 100%;
@@ -639,7 +606,7 @@ body {
 .druer2 img {
   width: 100%;
   height: auto;
-  margin-top: -160px;
+  margin-top: -135px;
   position: relative;
 }
 
@@ -825,7 +792,7 @@ body {
 
   }
   .section {
-    margin-top: -20px;
+    margin-top: 40px;
   }
   .overlay-image2 h2,
   .overlay-image2 p {
@@ -883,6 +850,7 @@ body {
 /*Karussel */
   .karussel img {
     width: 80%;
+    height: 80%;
    
   }
   .udforsk-karussel {

@@ -33,8 +33,7 @@ body {
     font-family: "the seasons", serif;
     font-size: 48px;
     color: #163E61;
-    font-weight: bold
-    
+    font-weight: 400;
   }
   
    /* navigation styling */
@@ -49,12 +48,15 @@ body {
     height: auto;
   }
 
-   .nav-item2 > a {
+   .nav-item3 > a {
     border-bottom: 1px solid black;
     text-decoration: none;
     padding-bottom: 4px;
   }
-
+  .mega-box h2 {
+    font-size: 18px;
+    font-weight: normal; 
+  }
 
   .nav-links {
     display: flex;
@@ -348,10 +350,10 @@ body {
   }
   
   .split-section .image img {
-    width: 70%;
+    width: 100%;
+    height: 600px; 
     object-fit: cover;
     display: block;
-    padding-left: 325px;
   }
   
   /* Mobilvenligt layout */
@@ -363,12 +365,6 @@ body {
     .split-section .image img {
         height: 500px; 
     }
-    .split-section .image img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        padding-left: 0px;
-      }
   }
   /* Solarisdrue */
 
@@ -395,10 +391,11 @@ body {
 }
 
 .split-section2 .image img {
-    width: 70%;
-    object-fit: cover;
-    display: block;
-    padding-left: 325px;
+  width: 100%;
+  height: 600px; 
+  object-fit: cover;
+  display: block;
+  
 }
 
 /* Mobilvenligt layout */
@@ -409,12 +406,6 @@ body {
 
   .split-section2 .image img {
     height: 500px; 
-  }
-  .split-section2 .image img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-    padding-left: 0px;
   }
 }
 
@@ -442,10 +433,10 @@ body {
   }
   
   .split-section3 .image img {
-    width: 70%;
+    width: 100%;
+    height: 600px; 
     object-fit: cover;
     display: block;
-    padding-left: 325px;
     
   }
   
@@ -454,16 +445,9 @@ body {
     .split-section3 {
       flex-direction: column;
     }
-  
     .split-section3 .image img {
       height: 500px; 
     }
-    .split-section3 .image img {
-        width: 100%;
-        object-fit: cover;
-        display: block;
-        padding-left: 0px;
-      }
   }
 
   /* Tilmed nyhedsbrev */
@@ -794,5 +778,17 @@ body {
             left: 0;
             top: 65%;
             padding-left: 10px; 
+          }
+          .split-section h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .split-section2 h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+          }
+          .split-section3 h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
           }
         }
